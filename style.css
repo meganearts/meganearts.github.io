@@ -1,0 +1,15 @@
+/* https://techacademy.jp/magazine/4857 */
+/* https://techacademy.jp/magazine/4872 */
+
+.main{
+    background-color: rgb(7, 90, 34);
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+.text{
+    font-size: 40px;
+    color: rgb(240, 235, 235);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

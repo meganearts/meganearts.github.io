@@ -1,112 +1,73 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>なんと！web作成の練習中です | meganearts</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>久しぶりのGitHubPages</title>
+  <style>
+/*     li{color: blue;}
+    li{display: block;}
+    li{list-style: none;}
+    li{text-decoration: none;}
+    li{text-align: center;}
+    li{float: left;}
+    li:hover {color: brown;} */
+  .hoshi {
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.hoshi ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: left;
+}
+
+.hoshi li {
+  margin: 0 10px;
+}
+
+.hoshi a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hoshi a:hover {
+  background-color: #45a049;
+}
+
+h1{
+  margin: 0px;
+  padding: 0px;
+}
+  </style>
 </head>
-
 <body>
-    <div class="main">
-        <span class="text">Study Web</span>
-    </div>
-    
-    <p>たけのこ茹でましたよ！</p>
-    <img id="takenoko" src="yudetakenoko.jpeg" alt="たけのこ茹でたよ">
+  <h1>私の部屋！</h1>
+    <nav class="hoshi">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="profile.html">自己紹介</a></li>
+        <li><a href="#services">サービス</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  <p>久しぶりに頑張って勉強します！ようやく完成です。。。。。。</p>
+  <video src="IMG_3132.MOV " width="50%" height="50%" controls>
+    お使いのブラウザは動画タグをサポートしていません。
+  </video><br>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/_lL6GRKKSeg?si=vGq3ihcs14YERCma" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    <h1>タグ入力練習！</h1> 
-    <h1>これだけは押さえておきたいタグを厳選しましたよ。</h1>
-    <p>pタグの練習で作成しました</p>
-    <a href="https://techacademy.jp/magazine/12305" target="_blank">このページで練習してみよう！</a>
-    <!-- <a href=""></a> -->
-    
-    <h2>GitHubについて</h2>
-        <a href="https://github.com/">GitHub公式</a>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/OfAjaxu2-uU?si=MBTu0oxlot7DvTSj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    <h2>基本構造</h2>
-    <ol>
-        <li>HTML</li>
-            <a href="https://developer.mozilla.org/ja/docs/Web/HTML" target="_blank">詳細こちら</a>
-        <li>CSS</li>
-            <a href="https://developer.mozilla.org/ja/docs/Web/CSS" target="_blank">詳細こちら</a>
-        <li>JavaScript</li>
-            <a href="https://developer.mozilla.org/ja/docs/Web/JavaScript" target="_blank">詳細こちら</a>
-    </ol>
-    
-    <h2>効果</h2>
-
-    <ol>
-        <li>パララックス</li>
-            <p>スクロールなどの動作に応じて、複数のレイヤーにある要素を異なるスピードで動かすことで視差を生み、立体感や奥行きを演出などが行える視差効果のこと</p> 
-        <li>オブザーバー</li>
-            <p><a href="https://developer.mozilla.org/ja/docs/Web/API/Intersection_Observer_API" target="_blank">詳細こちら</a></p>
-        <li>ナビゲーションバー</li>
-            <p>サイトの階層間を移動する際に使われる誘導の為のメニュー。<br>
-            サイトの上部や左側に設置されることが多い。<br>
-            サイト閲覧者が操作しやすい様にボタンの大きさや文字色を調整する事が大切。<br>
-            使っているデバイスによっては、この仕組みは不便なので、スマートフォンサイトなどでは使わない方が良い。</p>
-        <li>カルーセルパネル</li>
-                <p>画像などのコンテンツをスムーズに横にスライドさせる表示方法のこと。<br>
-                    狭いエリアに複数のコンテンツを表示させることができる。<br>
-                    主にJavaScriptとCSSの組み合わせてなどによって実現される。<br>
-                    多くの場合、リストの左右の端に達すると逆側の端にループするように設計される。</div>
-                </p>
-        <li>アコーディオンメニュー</li>
-                <p>Webサイトのナビゲーションメニューの一種であり、<br>
-                    項目をクリックしたり、マウスオーバーする事によって項目に応じた詳細を表示させる事が出来る。<br>
-                    Webコンテンツをコンパクトに収納出来る利点があり、多くのサイトで採用されている。<br>
-                    アコーディオンを実現する為のJavaScrptフレームワークやCSSフレームワークが公開されており、<br>
-                    これらを活用する事でどのようなサイトでもアコーディオン表示の仕組みを導入出来る。<br>
-                    文章の多いサイトで効果的であり、必要に応じて文章ベースのコンテンツを広げて表示できる。<br>
-                    コンパクトなWebサイトを構築したい時に役に立ち、スマートフォンサイトでは特に有用な仕組み。<br>
-                </p>
-        <li>ドロップダウン</li>
-        <li>ハンバーガー</li>
-        <li>レスポンシブ</li>
-    </ol>
-
-
-
-
-
-    <table border="1">
-        <tr>
-            <th>見出し1</th>
-            <th>見出し2</th>
-            <th>見出し3</th>
-        </tr>
-        <tr>
-            <td>中身1</td>
-            <td>中身2</td>
-            <td>中身3</td>
-        </tr>
-    </table>
-
-    <form action="">
-        <p><textarea name="text" cols="30" rows="10">お願いだからここにテキストを入れて欲しいです</textarea></p>
-        <button type="reset">リセットします。。</button>
-        <button type="submit">送信だよね</button>
-        <p><input type="submit" value="送信するならここを押してね"></p>
-        <p><input type="text" name="名前ってなに" placeholder="入力しよし" id=""></p>
-        <p><input type="checkbox" name="" value="1" id="" checked>1番です</p>
-        <p><input type="checkbox" name="" value="2" id="" checked>2番です</p>
-        <p><input type="radio" name="user-select" id="" value="1">1丁目</p>
-        <p><input type="radio" name="user-select" id="" value="2">2丁目</p>
-        <p></p>
-    </form>
-    
-    <select name="course">
-        <option value="A">Aを購入</option>
-        <option value="B">Bを購入</option>
-        <option value="C">Cを購入</option>
-        <option value="none">買わない</option>
-    </select>
-    
-    
-
-
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/D-AojzCi6_4?si=LN6ks23kJALaBUwX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  
 </body>
 </html>
